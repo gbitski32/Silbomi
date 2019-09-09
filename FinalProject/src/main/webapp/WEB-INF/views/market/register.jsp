@@ -1,3 +1,199 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <%@ include file="../main/include/headAndMeta.jsp" %>
+  
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+   <%@ include file="../main/include/nav.jsp" %>
+	  
+<script>
+
+$(document).ready(function(){
+  var fileTarget = $('.filebox .upload-hidden');
+
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+
+        $(this).siblings('.upload-name').val(filename);
+    });
+    
+    $("#clickFile").click(function() {
+    	$('#uploadFile').click();
+    });
+    
+}); 
+
+</script>		
+	<div style="margin-top:80px;" style="border:1px solid black;"></div>
+	
+	<div>
+		<img src="/silbomi/resources/green/images/main.jpg" alt="" style="width:100%; height:200px;" />
+	</div>
+	
+    
+	
+	<div class="container" style="margin-top:50px;">
+	
+		<div align="center">
+			<h1 style="font-size:42px;margin-bottom:40px;">ªÛ«∞ µÓ∑œ ∆‰¿Ã¡ˆ</h1>
+			
+			
+			<br><br>
+
+	<section class="appointment-area area-padding-top">
+		
+
+		<div class="appointment-inner">
+			<div class="container">
+	
+			<table class="table"  style="width:88%; padding:10px;">
+				<tr>
+					<th>ƒ´≈◊∞Ì∏Æ</th>
+					<td>
+						<select name="" id="" class="" style="width:40%;text-align:center;">
+							<option value="">º±≈√«œººø‰</option>
+							<option value="">«∞∏Ò1</option>
+							<option value="">«∞∏Ò2</option>
+							<option value="">«∞∏Ò3</option>
+							<option value="">«∞∏Ò4</option>
+							<option value="">«∞∏Ò5</option>
+						</select>
+					</td>
+					
+				</tr>
+				<tr>
+					<th>∞≈∑°πÊπ˝</th>
+					<td>
+						<select name="" id="" class="" style="width:40%;text-align:center;">
+							<option value="">º±≈√«œººø‰</option>
+							<option value="">«∞∏Ò1</option>
+							<option value="">«∞∏Ò2</option>
+							<option value="">«∞∏Ò3</option>
+							<option value="">«∞∏Ò4</option>
+							<option value="">±‚≈∏(ø¿∏•¬ ø° input√ﬂ∞°)</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>¡¶∏Ò</th>
+					<td>
+					<div class="form-group">
+						<input type="text" name="" id="" value="" 
+							class="form-control" style="width:84%" />
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<th>æ∆¿Ãµ</th>
+					<td>
+						<h2>∆«∏≈¿⁄ æ∆¿Ãµ∏¶ æµ±Ó∏ª±Ó ∞ÌπŒ §°§°</h2>
+					</td>
+				</tr>
+				<tr>
+					<th>¿ÃπÃ¡ˆ</th>
+					<td>
+						<p>ΩÊ≥◊¿œ∑Œ ªÁøÎ«“ ¿ÃπÃ¡ˆ∏¶ º±≈√«œººø‰</p>
+						<div class="filebox bs3-primary" style="border:1px solid red; margin-right:40px; display:inline-block;">
+                            <input class="upload-name" value="∆ƒ¿œº±≈√" disabled="disabled">
+                            <label for="filename" id="clickFile" >æ˜∑ŒµÂ</label> 
+                          	<input type="file" name="" id="uploadFile" class="upload-hidden"> 
+                        </div>
+						<div id="img_view" style="border:1px solid blue; display:inline-block;">
+							<img src="/silbomi/resources/green/images/image_1.jpg" width="250"  alt="" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>¡§∫∏¡¶∞¯µø¿«</th>
+					<td>
+						<input type="checkbox" name="" id="" />
+							ªÛ«∞µÓ∑œ¡§∫∏¿« ∞≈∑°æ˜√º ¡¶∞¯µø¿«(« ºˆ)
+					</td>
+				</tr>
+				<tr>
+					<th>∆«∏≈¿⁄¡§∫∏</th>
+					<td>
+						<div style="text-align:center; width:60%;">
+							<p><a href="">ø¨∂Ù√≥ ∫Ø∞Ê</a></p>
+							<p>ø¨∂Ù√≥ : 010-5315-7568</p>
+							<p>¿Ã∏ﬁ¿œ : akdie213@naver.com</p>
+							<br>
+							<div style="text-align:left">
+								<input type="checkbox" name="" id="" />
+									∆«∏≈¿⁄ ø¨∂Ù√≥¡§∫∏ ≥Î√‚ µø¿«  &nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="" id="" />
+									∆«∏≈¿⁄ ¿Ã∏ﬁ¿œ¡§∫∏ ≥Î√‚ µø¿«<br>
+							</div>
+						</div>
+						
+					</td>
+				</tr>
+				<tr >
+					<th>ªÛ«∞º≥∏Ì</th>
+					<td style="padding-top:50px;  padding-bottom:60px;">
+						<textarea name="" id="contentsCk"  style="width:92%;"
+							class="form-control">CKø°µ≈Õ∏¶ ¿˚øÎ</textarea>
+					</td>
+					<script type="text/javascript">
+						CKEDITOR.replace('contentsCk', {
+							height : 800,
+							filebrowserImageUploadUrl: './ckupload.do'
+						});
+					</script>
+				</tr>
+				<tr>
+					<th>ƒ∏√≠api</th>
+					<td>
+						<div style="display:inline-block; width:250px;text-align:center;margin-top:40px;">
+							<h4>¿⁄µøµÓ∑œ πÊ¡ˆ ƒ∏√≠</h4><br>
+							<div style="background-color:skyblue; font-size:30px;">
+								JDCA7D<br>
+							</div>
+						</div>
+						<div style="display:inline-block; margin-left:80px;width:420px;">
+							<p>∂»πŸ∑Œ ¿‘∑¬«œΩ Ω√ø¿!!∫ª¿Œ¿Œ¡ı¿ª «œ¡ˆ æ ∞Ì ∞£∆Ì¿Œ¡ı¿ª «œΩ√¥¬ ∞Ì∞¥¥‘≤≤º≠¥¬ 
+								¿œ∫Œ ¡¶»ﬁ º≠∫ÒΩ∫∞° ¡¶«—µ… ºˆ ¿÷Ω¿¥œ¥Ÿ.</p>
+							<input type="text" class="form-control" style="width:360px;"/>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center; ">
+						<input type="submit" value="µÓ∑œ«œ±‚" style="margin-top:40px;"
+							class="btn py-3 px-4 btn-primary">
+					</td>
+				</tr>
+			</table>
+			
+			</div>
+		</div>
+	</section>	
+			
+		</div>
+		
+		<br><br>
+		<hr />
+		<br><br>
+		<h3>¿Ã∑±Ωƒ¿∏∑Œ æÀæ∆º≠ ¥ŸµÈ «œΩ√ø¿</h3>
+		
+	
+	</div>
+
+	
+		
+<!-- about us (our staff ∂Û¿Œ¿‘¥œ¥Ÿ -->		
+=======
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -373,6 +569,7 @@ function isNumber() {
 	
 		
 <!-- about us (our staff ÎùºÏù∏ÏûÖÎãàÎã§ -->		
+>>>>>>> refs/remotes/origin/master
 		
     <section class="ftco-section">
     	<div class="container">

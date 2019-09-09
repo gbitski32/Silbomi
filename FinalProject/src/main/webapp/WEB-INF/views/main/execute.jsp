@@ -1,3 +1,69 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <%@ include file="./include/headAndMeta.jsp" %>
+  
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+   <%@ include file="./include/nav.jsp" %>
+	  
+		
+	<div style="margin-top:80px;" style="border:1px solid black;"></div>
+	
+	<div>
+		<img src="/silbomi/resources/green/images/main.jpg" alt="" style="width:100%; height:200px;" />
+	</div>
+	
+    
+
+	<div class="container" style="margin-top:50px;">
+	
+		<div align="center">
+			<h1 style="font-size:42px;">여기다가 다들 작성하시오 빠이팅!</h1>
+			
+			<h3>이미지나 폰트 css 이런것도 알아서들 작성하세요</h3>
+			
+			<br><br>
+			
+			<table class="table">
+				
+				<tr>
+					<th>제목</th>
+					<td>
+						내용쓰~~~~~~~~
+					</td>
+				</tr>
+				<tr>
+					<th>제목</th>
+					<td>
+						내용쓰~~~~~~~~
+					</td>
+				</tr>
+				<tr>
+					<th>주제</th>
+					<td>
+						내용쓰~~~~~~~~
+					</td>
+				</tr>
+				<tr>
+					<th>주제</th>
+					<td>
+						내용쓰~~~~~~~~
+					</td>
+				</tr>
+			
+			</table>
+			
+		</div>
+		
+		<h3>이런식으로 알아서 다들 하시오</h3>
+=======
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -62,6 +128,7 @@
 		</div>
 		
 		<h3>�̷������� �˾Ƽ� �ٵ� �Ͻÿ�</h3>
+>>>>>>> refs/remotes/origin/master
 		
 	
 	</div>

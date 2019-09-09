@@ -1,3 +1,386 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html lang="ko">
+
+<%@ include file="../main/include/headAndMeta.jsp"%>
+
+<body data-spy="scroll" data-target=".site-navbar-target"
+	data-offset="300">
+
+
+	<%@ include file="../main/include/nav.jsp"%>
+
+
+	<div style="margin-top: 80px;" style="border:1px solid black;"></div>
+
+	<div>
+		<img src="/silbomi/resources/green/images/main.jpg" alt=""
+			style="width: 100%; height: 200px;" />
+	</div>
+
+
+
+	<div class="container" style="margin-top: 50px;">
+
+		<div align="center">
+			<h1 style="font-size: 42px;">상품들 상세보기 페이지 입니다.</h1>
+
+			<div style="">
+				
+				<form action="#" class="search-form">
+					<div class="form-group" style="width:70%;">
+						<span class="icon icon-search"></span> <input type="text"
+							class="form-control" placeholder="Type a keyword and hit enter">
+					</div>
+				</form>
+			</div>	
+		<br>
+		<br>
+
+
+	<section class="appointment-area area-padding-top">
+		<div class="container">
+
+			<div class="appointment-inner">
+				<div style="text-align:right; width:92%; ">
+					<p onclick="alert('아이디');">유저아이디</p>
+				</div>
+				<div style="padding-bottom:40px;border-bottom: 5px ridge #E8EDF4; text-align:left;
+						padding-left: 40px; margin-bottom:40px;">
+					<h2>
+						<i class="fa fa-shopping-bag"></i>
+						  상품제목(겁나게 길게 써있는거 주욱주욱 써있따)
+					</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6" style="">
+						<h3>아주 끝내주는 상품입니다</h3>
+						<br>
+
+						<img src="/silbomi/resources/green/images/doctor/gun1.jpg"
+							alt="" width="400" /> <br>
+						<h5>요것은 총이여 ㅋㅋㅋ</h5>
+						<div style="">
+							<h2 style="color:green; margin-top:50px;">￦20,000</h2>
+						</div>
+					</div>
+
+
+					<div class="col-sm-12 col-lg-4 offset-lg-1" style="">
+						<h3>Have Some Questions?</h3>
+						<div class="accordion" id="accordionExample">
+
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+										<button class="btn btn-link" type="button"
+											data-toggle="collapse" data-target="#collapseOne"
+											aria-expanded="true" aria-controls="collapseOne">
+												이거 가격 말해줄게 ㅡㅡ	
+										</button>
+
+									</h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show"
+									aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">Great day without sixth a lesser
+										beginning. Their thing abundantly air moving saw fruitful
+										lesser god. Sea abundantly blessed life set. Land. Lights
+										divided man in deep in open upon.</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseTwo"
+											aria-expanded="false" aria-controls="collapseTwo">
+											Moving creepeth moved upon man grass two days?</button>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse"
+									aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">Great day without sixth a lesser
+										beginning. Their thing abundantly air moving saw fruitful
+										lesser god. Sea abundantly blessed life set. Land. Lights
+										divided man in deep in open upon.</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseThree"
+											aria-expanded="false" aria-controls="collapseThree">
+											God male gathering them it female which green cattle?</button>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse"
+									aria-labelledby="headingThree"
+									data-parent="#accordionExample">
+									<div class="card-body">Great day without sixth a lesser
+										beginning. Their thing abundantly air moving saw fruitful
+										lesser god. Sea abundantly blessed life set. Land. Lights
+										divided man in deep in open upon.</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="headingFour">
+									<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseFour"
+											aria-expanded="false" aria-controls="collapseFour">
+											Saw isn't likeness beginning yielding land days she?</button>
+									</h5>
+								</div>
+								<div id="collapseFour" class="collapse"
+									aria-labelledby="headingFour" data-parent="#accordionExample">
+									<div class="card-body">Great day without sixth a lesser
+										beginning. Their thing abundantly air moving saw fruitful
+										lesser god. Sea abundantly blessed life set. Land. Lights
+										divided man in deep in open upon.</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="headingFive">
+									<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseFive"
+											aria-expanded="false" aria-controls="collapseFive">
+											Saw isn't likeness beginning yielding land days she?</button>
+									</h5>
+								</div>
+								<div id="collapseFive" class="collapse"
+									aria-labelledby="headingFive" data-parent="#accordionExample">
+									<div class="card-body">Great day without sixth a lesser
+										beginning. Their thing abundantly air moving saw fruitful
+										lesser god. Sea abundantly blessed life set. Land. Lights
+										divided man in deep in open upon.</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			
+
+		<div style="border-top: 5px ridge #E8EDF4;  text-align:left; padding-top:20px;
+					border-bottom:2px solid #28A745; padding-bottom:4px;
+						padding-left: 20px; margin-top:100px; margin-bottom:40px;">
+			<a href="#detail"><button type="button" class="btn btn-outline-success"
+				style="width:200px; height:50px; margin-right:10px;" >
+					상품설명</button></a><!-- 버튼들 jquery로 내용띄워주는것과 active or visited 효과 주기 -->
+			<a href="#comment"><button type="button"  class="btn btn-success" 
+				style="width:200px; height:50px;" >
+					댓글보기</button></a>
+		</div>
+
+
+			<!-- 상품 상세 영역 -->
+
+			<div class="col-lg-8 ftco-animate" id="detail">
+				<h2 class="mb-3">상품 상세 영역입니다ㅇㅇ</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Reiciendis, eius mollitia suscipit, quisquam doloremque
+						distinctio perferendis et doloribus unde architecto optio
+						laboriosam porro adipisci sapiente officiis nemo accusamus ad
+						praesentium? Esse minima nisi et. Dolore perferendis, enim
+						praesentium omnis, iste doloremque quia officia optio deserunt
+						molestiae voluptates soluta architecto tempora.</p>
+					<p>
+						<img src="/resources/green/images/image_3.jpg" alt="써도되고안써도되고" 
+							class="img-fluid">
+					</p>
+					<p>Molestiae cupiditate inventore animi, maxime sapiente
+						optio, illo est nemo veritatis repellat sunt doloribus nesciunt!
+						Minima laborum magni reiciendis qui voluptate quisquam voluptatem
+						soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi
+						deleniti tenetur dolore amet fugit perspiciatis ipsa, odit.
+						Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
+						
+				<h2 class="mb-3 mt-5">이상품은 어떤거야 ~~~~~~</h2>
+				
+					<p>Temporibus ad error suscipit exercitationem hic molestiae
+						totam obcaecati rerum, eius aut, in. Exercitationem atque quidem
+						tempora maiores ex architecto voluptatum aut officia doloremque.
+						Error dolore voluptas, omnis molestias odio dignissimos culpa ex
+						earum nisi consequatur quos odit quasi repellat qui officiis
+						reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
+					<p>
+						<img src="/silbomi/resources/green/images/image_4.jpg" alt="" class="img-fluid">
+					</p>
+					<p>Quisquam esse aliquam fuga distinctio, quidem delectus
+						veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde
+						aut non tenetur tempore, nisi culpa voluptate maiores officiis
+						quis vel ab consectetur suscipit veritatis nulla quos quia
+						aspernatur perferendis, libero sint. Error, velit, porro.
+						Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
+					<p>Odit voluptatibus, eveniet vel nihil cum ullam dolores
+						laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga
+						iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis
+						porro explicabo soluta commodi libero voluptatem similique id
+						quidem? Blanditiis voluptates aperiam non magni. Reprehenderit
+						nobis odit inventore, quia laboriosam harum excepturi ea.</p>
+					<p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime
+						ullam ipsam quidem, dolor distinctio similique asperiores
+						voluptas enim, exercitationem ratione aut adipisci modi quod
+						quibusdam iusto, voluptates beatae iure nemo itaque laborum.
+						Consequuntur et pariatur totam fuga eligendi vero dolorum
+						provident. Voluptatibus, veritatis. Beatae numquam nam ab
+						voluptatibus culpa, tenetur recusandae!</p>
+					<p>Voluptas dolores dignissimos dolorum temporibus, autem
+						aliquam ducimus at officia adipisci quasi nemo a perspiciatis
+						provident magni laboriosam repudiandae iure iusto commodi debitis
+						est blanditiis alias laborum sint dolore. Dolores, iure,
+						reprehenderit. Error provident, pariatur cupiditate soluta
+						doloremque aut ratione. Harum voluptates mollitia illo minus
+						praesentium, rerum ipsa debitis, inventore?</p>
+				<div class="tag-widget post-tag-container mb-5 mt-5">
+					<div class="tagcloud">
+						<a href="#" class="tag-cloud-link">Life</a> <a href="#"
+							class="tag-cloud-link">Sport</a> <a href="#"
+							class="tag-cloud-link">Tech</a> <a href="#"
+							class="tag-cloud-link">Travel</a>
+					</div>
+				</div>
+
+
+			</div>
+			
+		<!-- 댓글시작임 -->			
+		<div class="container" style="text-align:left; padding:20px; width:80%;">
+			<h3 class="mb-5">6 Comments</h3>
+			<ul class="comment-list">
+				<li class="comment">
+					<div class="vcard bio">
+						<img src="/silbomi/resources/green/images/person_1.jpg" alt="Image placeholder">
+					</div>
+					<div class="comment-body">
+						<h3>John Doe</h3>
+						<div class="meta">October 03, 2018 at 2:21pm</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Pariatur quidem laborum necessitatibus, ipsam impedit
+							vitae autem, eum officia, fugiat saepe enim sapiente iste
+							iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+						<p>
+							<a href="#" class="reply">Reply</a>
+						</p>
+					</div>
+				</li>
+
+				<li class="comment">
+					<div class="vcard bio">
+						<img src="/silbomi/resources/green/images/person_1.jpg" alt="Image placeholder">
+					</div>
+					<div class="comment-body">
+						<h3>John Doe</h3>
+						<div class="meta">October 03, 2018 at 2:21pm</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Pariatur quidem laborum necessitatibus, ipsam impedit
+							vitae autem, eum officia, fugiat saepe enim sapiente iste
+							iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+						<p>
+							<a href="#" class="reply">Reply</a>
+						</p>
+					</div>
+
+					<ul class="children">
+						<li class="comment">
+							<div class="vcard bio">
+								<img src="/silbomi/resources/green/images/person_1.jpg" alt="Image placeholder">
+							</div>
+							<div class="comment-body">
+								<h3>John Doe</h3>
+								<div class="meta">October 03, 2018 at 2:21pm</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Pariatur quidem laborum necessitatibus, ipsam impedit
+									vitae autem, eum officia, fugiat saepe enim sapiente iste
+									iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+								<p>
+									<a href="#" class="reply">Reply</a>
+								</p>
+							</div>
+
+
+							<ul class="children">
+								<li class="comment">
+									<div class="vcard bio">
+										<img src="/silbomi/resources/green/images/person_1.jpg" alt="Image placeholder">
+									</div>
+									<div class="comment-body">
+										<h3>John Doe</h3>
+										<div class="meta">October 03, 2018 at 2:21pm</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit. Pariatur quidem laborum necessitatibus, ipsam
+											impedit vitae autem, eum officia, fugiat saepe enim
+											sapiente iste iure! Quam voluptas earum impedit
+											necessitatibus, nihil?</p>
+										<p>
+											<a href="#" class="reply">Reply</a>
+										</p>
+									</div>
+
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+					<li class="comment">
+						<div class="vcard bio">
+							<img src="/silbomi/resources/green/images/person_1.jpg" alt="Image placeholder">
+						</div>
+						<div class="comment-body">
+							<h3>John Doe</h3>
+							<div class="meta">October 03, 2018 at 2:21pm</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Pariatur quidem laborum necessitatibus, ipsam impedit
+								vitae autem, eum officia, fugiat saepe enim sapiente iste
+								iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+							<p>
+								<a href="#" class="reply">Reply</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<!-- END comment-list -->
+	
+				<div class="comment-form-wrap pt-5">
+					<h3 class="mb-5">Leave a comment</h3>
+					<form action="#" class="p-5 bg-light">
+						<div class="form-group">
+							<label for="name">Name *</label>
+								<input type="text"
+									class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email *</label> 
+								<input type="email"
+									class="form-control" id="email">
+						</div>
+	
+						<div class="form-group">
+							<label for="message">Message</label>
+								<textarea name="" id="message" cols="30" rows="10"
+									class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Post Comment"
+								class="btn py-3 px-4 btn-primary">
+						</div>
+
+					</form>
+				</div>
+			</div>	
+=======
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -415,6 +798,7 @@ function replyDelete(num) {
 			
 			<button type="button" onclick="location.href='./list?';" 
 				style="width:100px;"class="btn btn-outline-info">紐⑸줉</button>
+>>>>>>> refs/remotes/origin/master
 
 		</div>
 		</div>

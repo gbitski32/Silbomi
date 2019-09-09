@@ -1,3 +1,417 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <%@ include file="../main/include/headAndMeta.jsp" %>
+  
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+   <%@ include file="../main/include/nav.jsp" %>
+	  
+		
+	<div style="margin-top:80px;" style="border:1px solid black;"></div>
+	
+	<div>
+		<img src="/silbomi/resources/green/images/main.jpg" alt="" style="width:100%; height:200px;" />
+	</div>
+	
+    
+
+	<div class="container" style="margin-top:50px;">
+	
+		<div align="center">
+			<h1 style="font-size:42px;">장터관련입니다</h1>
+
+			
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      
+      <div class="container">	
+			
+		<div class="row d-flex contact-info mb-5">
+		
+		
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-map-signs"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+          
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-phone2"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+          
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-paper-plane"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+          
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-globe"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+          
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-contacts"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+          
+          
+          <div class="col-md-4 col-lg-2 d-flex text-center" style="height:210px;" >
+          		<button class="box p-4" id="clics"
+          				onclick="location.href='../test/main';">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-globe"></span>
+	          		</div>
+	          		<h3 class="mb-4" style="font-weight:bold;">Address</h3>
+          		</button>
+      	  </div>
+      	  
+        </div>
+        </div>
+    </section>
+    
+    
+			
+			
+	<br><br>
+	
+	<table class="table" style="width:90%">
+		<tr>
+			<th>카테고리1</th>
+			<td style="text-align:center;">
+				<select name="ss" id="" class="form-control">
+					<option>가격순</option>
+					<option>날짜순</option>
+					<option>이름순</option>
+				</select>
+			</td>
+			<th>카테고리1</th>
+			<td style="text-align:center;">
+				<select name="ss" id="" class="form-control">
+					<option>가격순</option>
+					<option>날짜순</option>
+					<option>이름순</option>
+				</select>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<table class="table" style="width:90%">
+		<tr>
+			<th>지역</th>
+			<td style="text-align:center;">
+				<input type="text" class="form-controll" style="width:80%" />
+			</td>
+			<th>작성자</th>
+			<td style="text-align:center;">
+				<input type="text" class="form-controll" style="width:80%" />
+			</td>
+		</tr>
+		
+	</table>
+	<table class="table" style="width:90%">
+		<tr>
+			<th>검색</th>
+			<td style="width:60%;">
+				<input type="text" class="form-controll" style="width:80%" />
+				<button type="button" class="btn btn-outline-info" style="float:right;">검색</button>
+			</td>
+			<th>필터</th>
+			<td style="text-align:center;">
+				<select name="ss" id="" class="form-controll">
+					<option>가격순</option>
+					<option>날짜순</option>
+					<option>이름순</option>
+				</select>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<br><br>
+	<hr>
+	<br><br>
+			
+	<section class="doctor_part section_padding single_doctor_part">
+        <div class="container">
+            <!-- <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2> Experienced Doctors</h2>
+                        <p>Face replenish sea good winged bearing years air divide wasHave night male also</p>
+                    </div>
+                </div>
+            </div> -->
+            
+         <div class="row">
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/gun1.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/gun1.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/bullet2.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/gun2.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                	
+                	
+            <!--  기본 입니다 -->    	
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/sinbal.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/sinbal.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/gun1.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item" >
+                        <div class="single_blog_img">
+                            <img src="/silbomi/resources/green/images/doctor/bullet2.jpg" 
+                            	width="250" height="180">
+                           
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                            	<br>
+                                <h6 style="color:#282828; font-weight:bold; ">가격 : ￦20,000</h6>
+                                <div align="center">
+									<p style="font-size:18px; font-color:black !important; font-weight:bold">
+										너무졸리다 집가고 싶다 집가고 싶다 으아아아ㅏ
+									</p>
+                                	<!-- substring 으로 2줄넘으로 짜르고 1줄짜리면 br태그를 붙혀준다 -->
+                                <p>
+	                               	 <a href="#" style="color:gray;">
+	                               	 	<i class="fa fa-commenting-o"></i> 08 comment</a>
+	                                &nbsp;&nbsp;&nbsp;&nbsp;
+	                                <a href="#" style="color:gray;">
+	                                	<i class="fa fa-heart-o"></i> 0 like</a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+=======
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -457,6 +871,7 @@
             </div>
           </div>
         </div>
+>>>>>>> refs/remotes/origin/master
         </div>
     </section>
 			

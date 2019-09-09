@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.team.mappers.myPageMapper">
+
+	<!-- 내 정보 -->
+	<select id="myInfo" resultType="com.team.silbomi.VO.MemberVO">
+		SELECT * FROM sil_member WHERE user_id = #{user_id}
+	</select>
+	
+	<!-- 비밀번호 체크 -->
+	<select id="checkPw" resultType="int">
+		SELECT * COUNT(*) FROM sil_member WHERE user_id = #{user_id} AND user_pw = #{user_pw}
+	</select>
+	
+</mapper>
+	

@@ -30,6 +30,31 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+<<<<<<< HEAD
+	<!-- 한글 깨짐에 대한 설정 추가 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+    0
+	<!-- 세션 유지시간을 web.xml에 설정할때는 아래와같이한다. 
+	   단, 여기에 설정된 시간은 '분' 단위이다. -->
+	<session-config>
+	   <session-timeout>60</session-timeout>
+	</session-config> 
+=======
 	<filter>
       <filter-name>encodingFilter</filter-name>
       <filter-class>org.springframework.web.filter.CharacterEncodingFilter
@@ -47,5 +72,6 @@
          <filter-name>encodingFilter</filter-name>
          <url-pattern>/*</url-pattern>
       </filter-mapping>
+>>>>>>> refs/remotes/origin/master
 
 </web-app>

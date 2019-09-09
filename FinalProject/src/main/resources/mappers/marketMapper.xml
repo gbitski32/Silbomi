@@ -5,6 +5,8 @@
   
 <mapper namespace="silbomi.mappers.marketMapper">
 	
+<<<<<<< HEAD
+=======
 	<!-- 등록 -->
 	<insert id="register" parameterType="com.team.silbomi.VO.MarketVO">
 		INSERT INTO sil_goods (goodsNum, goodsCategory, goodsName, goodsWriter, goodsPrice,
@@ -74,4 +76,5 @@
 	</delete>
 	
 	
+>>>>>>> refs/remotes/origin/master
 </mapper>  

@@ -1,5 +1,41 @@
 package com.team.silbomi.controller;
 
+<<<<<<< HEAD
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/market/*")
+public class MarketController {
+
+	@RequestMapping(value="register", method=RequestMethod.GET)
+	public void register() {
+		
+		
+	}
+	
+	
+	@RequestMapping(value="view", method=RequestMethod.GET)
+	public void view() {
+		
+	}
+	
+	@RequestMapping(value="views", method=RequestMethod.GET)
+	public void views() {
+		
+	}
+	
+	@RequestMapping(value="list", method=RequestMethod.GET)
+	public void list() {
+		
+		
+	}
+	
+	
+	
+}
+=======
 import com.team.silbomi.VO.MarketReplyVO;
 import com.team.silbomi.VO.MarketVO;
 import com.team.silbomi.service.MarketService;
@@ -186,3 +222,4 @@ public class MarketController {
 		return "redirect:views";
 	}
 }
+>>>>>>> refs/remotes/origin/master

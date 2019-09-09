@@ -1,0 +1,90 @@
+create user team IDENTIFIED by kosmo;
+
+grant connect, resource, dba to team;
+
+--Silbomi 怨꾩젙 ?깮?꽦 ?썑
+create table test (
+    id varchar2(100),
+    pw varchar2(100)
+);
+
+--?쉶?썝 ?뀒?씠釉?
+create table sil_member(
+    user_id varchar2(50) primary key,
+    user_name varchar2(50) not null,
+    user_pw varchar2(300) not null,
+    user_type number default 0,
+    silver_id varchar2(50) not null,
+    gender char(1) not null,
+    birth varchar2(10) not null,
+    tel varchar2(30),
+    mobile varchar2(30) not null,
+    smsAgree char(1),
+    email_id varchar2(50) not null,
+    email_domain varchar2(50) not null,
+    emailAgree char(1),
+    zipcode varchar2(20) not null,
+    addr1 varchar2(300) not null,
+    addr2 varchar2(300) not null
+);
+
+--?떎踰? ?쉶?썝 ?뀒?씠釉?
+create table sil_old_member(
+    silver_id varchar2(50) primary key,
+    silver_name varchar2(50) not null,
+    silver_pw varchar2(300) not null,
+    gender char(1) not null,
+    birth varchar2(10) not null,
+    tel varchar2(30),
+    mobile varchar2(30) not null,
+    smsAgree char(1),
+    email_id varchar2(50),
+    email_domain varchar2(50),
+    emailAgree char(1),
+    zipcode varchar2(20) not null,
+    addr1 varchar2(300) not null,
+    addr2 varchar2(300) not null,
+    gps_info varchar2(2000) 
+);
+
+drop table sil_member;
+
+
+-- test ?뜑誘몃뜲?씠?꽣 ?엯?젰
+insert into test values ('1', '1');
+
+--sil_member ?뜑誘몃뜲?씠?꽣 ?엯?젰
+insert into sil_member (user_id, user_name, user_pw, silver_id,
+                        gender, birth, mobile, smsAgree, 
+                        email_id, email_domain, emailAgree,
+                        zipcode, addr1, addr2)
+VALUES ('test1','hi', '1111', 'old','M','920101','01022344954','Y','test1','naver.com','N','13215','서울시 구로동','102동 101호');
+insert into sil_member (user_id, user_name, user_pw, silver_id,
+                        gender, birth, mobile, smsAgree, 
+                        email_id, email_domain, emailAgree,
+                        zipcode, addr1, addr2)
+VALUES ('test2','hi2', '2222', 'old2','W','921212','01022344954','Y','test2','gmail.com','Y','13215','서울시 구로동','어딘가');
+
+select * from sil_member;
+commit;
+
+--?뀒?뒪?듃?슜
+create table testBoard(
+    idx number primary key,
+    title varchar2(50) not null,
+    contents varchar2(1000) not null,
+    regidate date default sysdate
+);
+
+create sequence testBoard_seq;
+
+insert into testBoard values (testBoard_seq.nextval, '제목1', '내용1 입니다.', sysdate);
+insert into testBoard values (testBoard_seq.nextval, '제목2', '내용2 입니다.', sysdate);
+insert into testBoard values (testBoard_seq.nextval, '제목3', '내용3 입니다.', sysdate);
+insert into testBoard values (testBoard_seq.nextval, '제목4', '내용4 입니다.', sysdate);
+select * from testBoard;
+
+
+commit;
+
+SELECT user_pw FROM sil_member WHERE user_id = 'test1' AND user_name = 'hi' AND email_id = 'test1' AND email_domain = 'naver.com';

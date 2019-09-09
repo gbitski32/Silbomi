@@ -2,6 +2,17 @@
 <%@ page session="false" %>
 <html>
 <head>
+<<<<<<< HEAD
+	<title>Home</title>
+</head>
+<body>
+<h1>
+	Hello world!  
+</h1>
+
+<P>  The time on the server is ${serverTime}. </P>
+<a href="./main">Silbomi</a>
+=======
 	<script>
 		location.href='./main';
 	</script>
@@ -13,5 +24,6 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+>>>>>>> refs/remotes/origin/master
 </body>
 </html>

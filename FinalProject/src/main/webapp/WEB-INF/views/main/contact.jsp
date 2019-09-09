@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <%@ include file="./include/headAndMeta.jsp" %>
+  
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+   <%@ include file="./include/nav.jsp" %>
+	  
+		
+	<div style="margin-top:80px;" style="border:1px solid black;"></div>
+	
+	<div>
+		<img src="./images/ss2.png" alt="" style="width:100%" />
+	</div>
+	
+    
+
+    
+	<!-- contact us 창입니다~ -->
+=======
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -23,6 +50,7 @@
 
     
 	<!-- contact us â�Դϴ�~ -->
+>>>>>>> refs/remotes/origin/master
 	
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
