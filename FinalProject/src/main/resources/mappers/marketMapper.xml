@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="silbomi.mappers.marketMapper">
+	
+	<!-- 등록 -->
+	<insert id="register" parameterType="com.team.silbomi.VO.MarketVO">
+		INSERT INTO sil_goods (goodsNum, goodsCategory, goodsName, goodsWriter, goodsPrice,
+				goodsStock, goodsThumnail, goodsContent, del_type)
+			VALUES
+				(goods_seq.nextval, #{goodsCategory}, #{goodsName}, #{goodsWriter}, #{goodsPrice},
+					#{goodsStock}, #{goodsThumnail}, #{goodsContent}, #{del_type})
+	</insert>
+	
+	<select id="list" resultType="com.team.silbomi.VO.MarketVO">
+		SELECT * FROM sil_goods ORDER BY goodsNum DESC
+	</select>
+	
+	<select id="viewOne" resultType="com.team.silbomi.VO.MarketVO">
+		SELECT * FROM sil_goods where goodsNum = #{goodsNum}
+	</select>
+	
+	<update id="addCount">
+		UPDATE sil_goods SET replyCount = replyCount + 1 WHERE goodsNum = #{goodsNum}
+	</update>
+	
+	<update id="minusCount">
+		UPDATE sil_goods SET replyCount = replyCount - 1 WHERE goodsNum = #{goodsNum}
+	</update>
+	
+	<delete id="deleteGoods">
+		DELETE FROM sil_goods WHERE goodsNum = #{goodsNum}
+	</delete>
+	
+	<delete id="deleteGoodsReplys">
+		DELETE FROM sil_goods_reply WHERE replyGroup = #{goodsNum}
+	</delete>
+	
+	<insert id="replyWrite" parameterType="com.team.silbomi.VO.MarketReplyVO">
+		INSERT INTO sil_goods_reply (replyNum, replyWriter, replyContent, replyGroup, replySubGroup)
+			VALUES (goods_reply_seq.nextVal,  #{replyWriter}, #{replyContent}, #{replyGroup} 
+						, goods_reply_seq.nextVal )
+	</insert>	
+	
+	<insert id="replyStepWrite" parameterType="com.team.silbomi.VO.MarketReplyVO">
+		INSERT INTO sil_goods_reply (replyNum, replyWriter, replyContent, replyGroup, 
+						replySubGroup ,replyStep )
+			VALUES (goods_reply_seq.nextVal,  #{replyWriter}, #{replyContent}, #{replyGroup} 
+						, #{replySubGroup} , 1 )
+	</insert>
+	
+	<select id="getReplyOne" resultType="com.team.silbomi.VO.MarketReplyVO">
+		select * from sil_goods_reply WHERE replyNum = #{replyNum}
+	</select>
+	
+	<select id="replyList" resultType="com.team.silbomi.VO.MarketReplyVO">
+		select * from sil_goods_reply WHERE replyGroup=#{replyGroup}
+				 ORDER BY replySubGroup DESC, replyStep ASC, replyNum DESC
+	</select>
+	
+	<select id="replyCount" resultType="int">
+		SELECT count(*) from sil_goods_reply WHERE replyGroup=#{replyGroup}
+	</select>
+	
+	<update id="replyUpdate">
+		UPDATE sil_goods_reply SET replyContent=#{replyContent}
+			WHERE replyNum=#{replyNum}
+	</update>
+	
+	<delete id="replyDelete">
+		DELETE FROM sil_goods_reply WHERE replyNum=#{replyNum}
+	</delete>
+	
+	
+</mapper>  
